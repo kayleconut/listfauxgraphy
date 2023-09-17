@@ -2,6 +2,8 @@
 
 I used to use Listography pretty intensely because I like making lists, but it's limiting in a lot of aspects and looks like shit on a phone. Fortunately, I also like making things unnecessarily complicated for myself. Ergo, this. Thank you to [Desert Jaguar](http://desertjaguar.casa) for the idea!
 
+[Demo](https://kalechips.net/stuff/listography/)
+
 ## Dependencies
 
 Requires dragula.js/dragula.css for the drag-and-drop feature (already included in folder).
