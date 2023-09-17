@@ -1,0 +1,336 @@
+:root {
+    /* Page background */
+    --background:#4a7a68;
+    
+    /* Universal text and link colors */
+    --color:#2e2311;
+    --link:#562607;
+    
+    /* Font family (can include fallbacks) */
+    --bodyfont: sans-serif;
+
+    /* List background colors */
+    --color1: #bfbf71;
+    --color2: #d4c56c;
+    --color3: #e8b86e;
+    --color4: #a5c7a7;
+    --color5: #c39374;
+    
+    /* Borders for each background color */
+    --color1border:#4c4c03;
+    --color2border:#624a04;
+    --color3border:#5a3702;
+    --color4border:#2f5131;
+    --color5border:#522508;
+    
+    /* Header background and border */
+    --header: #a5c7a7;
+    --headerborder:#2f5131;
+    
+    /* Scrollbars */
+    --scrollbg:#89b48b;
+    --scrollcolor:#66432f;
+
+}
+
+* { margin:0; padding:0; scrollbar-color: var(--scrollcolor) var(--scrollbg);}
+
+body {
+    background: var(--background);
+    font: 1.15rem var(--bodyfont);
+    color: var(--color);
+    line-height:1.5;
+}
+
+/* Body text styles */
+
+main ul {
+    list-style-position:outside;
+    margin-left:20px;
+    line-height:1.5;
+}
+
+p {
+    line-height:1.5;
+    margin:10px 0 10px 0;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover, a:focus {
+    text-decoration:none;
+}
+
+/* Main header */
+
+header#top {
+    width: 80%;
+    max-width:1000px;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    background: var(--header);
+    border: 1px solid var(--headerborder);
+    margin: 25px auto;
+    border-radius: 5px; 
+}
+
+header#top h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+}
+
+/* Header text */
+
+#infocontainer {
+    padding:20px;
+    min-height:5.5em;
+}
+
+/* Header icon */
+
+.header-icon {
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 65px;
+    width: 65px;
+    float:left;
+}
+
+/* Menu */
+
+nav {
+    margin-top:10px;
+    border-top: 1px solid var(--headerborder); 
+    font-size:1rem;
+}
+
+nav ul {
+    list-style:none;
+    display:inline;
+}
+
+nav ul li {
+    display: inline-block;
+    width:100px;
+    text-align:center;
+    padding: 6px 0;
+    border-left: 1px solid var(--headerborder); 
+}
+
+nav ul li:first-child {
+    border: 0px; 
+}
+
+nav a {
+    text-decoration:none;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+/* Main content */
+
+main {
+    margin: 40px 70px 0 70px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Lists */
+
+section {
+    margin:20px;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    border: 1px solid;
+    border-radius: 5px; 
+    padding:15px;
+}
+
+/* List colors */
+
+.color1 {
+    background:var(--color1);
+    border-color:var(--color1border);
+    
+    & .listheader {
+        border-color:var(--color1border);
+    }
+    
+    & .handle {
+        color:var(--color1border);
+    }
+}
+
+.color2 {
+    background:var(--color2);
+    border-color:var(--color2border);
+    
+    & .listheader {
+        border-color:var(--color2border);
+    }
+    
+    & .handle {
+        color:var(--color2border);
+    }
+}
+
+.color3 {
+    background:var(--color3);
+    border-color:var(--color3border);
+    
+    & .listheader {
+        border-color:var(--color3border);
+    }
+    
+    & .handle {
+        color:var(--color3border);
+    }
+}
+
+.color4 {
+    background:var(--color4);
+    border-color:var(--color4border);
+    
+    & .listheader {
+        border-color:var(--color4border);
+    }
+    
+    & .handle {
+        color:var(--color4border);
+    }
+}
+
+.color5 {
+    background:var(--color5);
+    border-color:var(--color5border);
+    
+    & .listheader {
+        border-color:var(--color5border);
+    }
+    
+    & .handle {
+        color:var(--color5border);
+    }
+}
+
+/* List titles */
+
+header.listheader {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid; 
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
+
+h2 {
+    font-size:1.1em;
+}
+
+h2 .subtitle {
+    font-weight:normal;
+}
+
+h2 a {
+    text-decoration:none;
+    color: var(--color);
+}
+
+h2 a:hover {
+    text-decoration:underline;
+}
+
+/* Drag handle */
+
+.handle {
+    font-size:1rem;
+    cursor:grab;
+    font-weight:bold;
+}
+
+/* List icons */
+
+.listicon {
+    float: right;
+    margin: 0 0 5px 10px;
+    width:80px;
+    height:80px;
+    border-radius:5px;
+}
+
+/* List content */
+
+.listtext {
+    overflow: auto;
+    max-height: 300px;
+    padding:10px;
+}
+
+/* List footers */
+
+.foot {
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: right; 
+}
+
+.foot p {
+    margin:0;
+}
+
+/* Main footer */
+
+footer#bottom {
+    background: var(--header);
+    border: 1px solid var(--headerborder);
+    padding: 5px;
+    font-size:1rem;
+    margin: 25px auto;
+    max-width: 700px;
+    width:70%;
+    box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+    text-align: center;
+    border-radius: 5px; 
+}
+
+/* Phone stuff */
+
+@media screen and (max-width: 899px) {
+    header#top {
+        width:calc(100% - 40px);
+        margin-top:20px;
+    }
+
+    header#top h1 {
+        font-size:1.4em;
+    }
+
+    main {
+        display:inline;
+        margin: auto;
+        width:calc(100% - 40px);
+    }
+
+    .listtext {
+        height:auto;
+        max-height:250px;
+    }
+
+    .handle {
+        display:none;
+    }
+    
+    .foot {
+        font-size:0.85em;
+    }
+
+    h2 {
+        font-size:1.2em;
+    }
+
+    footer#bottom {
+        width:75%;
+    }
+}

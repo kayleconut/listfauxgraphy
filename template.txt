@@ -1,0 +1,26 @@
+NOTES
+ - The section id and the link in the list title (NAME) should be the same for anchors to work
+ - The section MUST have the class color1, color2, color3, color4, or color5 to display properly
+ - Do not remove the <span class="handle"> line unless you don't want to use the drag-and-drop
+ - Image is optional, just delete if not using
+ - Footer dates: The first date is when you made the list, the second is when the list was updated
+
+COPY CODE BELOW THIS LINE
+
+<section id="NAME" class="color1">
+<header class="listheader">
+<h2><a href="#NAME">category <span class="subtitle">(subtitle)</span></a></h2>
+<span class="handle">&#172;</span>
+</header>
+
+<div class="listtext">
+<img src="https://placekitten.com/90/90" class="listicon" alt="" />
+
+<!-- PLACE TEXT HERE -->
+
+</div>
+<footer class="foot">
+<p>september 15 2023 &infin;</p>
+<p>september 15 2023 +</p>
+</footer>
+</section>
